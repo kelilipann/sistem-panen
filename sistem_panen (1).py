@@ -18,3 +18,16 @@ hasil_panen = {
 total_panen = sum(hasil_panen.values())
 
 print("Total hasil panen:", total_panen, "kg")
+# Fungsi perhitungan diskon
+def hitung_diskon(harga, persen_diskon):
+    diskon = harga * persen_diskon / 100
+    harga_akhir = harga - diskon
+    return harga_akhir
+
+harga = 100000
+persen_diskon = 10
+
+harga_setelah_diskon = hitung_diskon(harga, persen_diskon)
+
+print("Harga setelah diskon:",
+      harga_setelah_diskon)
